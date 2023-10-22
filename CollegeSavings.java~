@@ -1,0 +1,50 @@
+public class CollegeSavings 
+{
+private double totalamount;
+private static int numdeposit;
+private double totalsave;
+public CollegeSavings()
+{
+}
+public CollegeSavings(double a)
+{
+totalamount =a; 
+}
+public void deposit(int x)
+{
+totalsave = totalsave + x ; 
+numdeposit ++;
+}
+public double averageDeposit()
+{
+if (numdeposit == 0)
+{
+ return 0.0;
+}
+return totalsave/numdeposit;
+}
+public double moneyNeeded()
+{
+if (totalsave >= totalamount)
+{
+ return 0.0;
+}
+return totalamount-totalsave;
+}
+public String toString()
+{  
+return totalamount + " " + moneyNeeded();  
+}
+public double getAmount()
+{
+return totalamount; 
+}
+public boolean sameCost (CollegeSavings d)
+{
+if (totalamount == d.getAmount)
+{
+return true;
+}
+return false;
+}
+}

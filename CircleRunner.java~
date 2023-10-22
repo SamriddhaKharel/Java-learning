@@ -1,0 +1,9 @@
+public class CircleRunner{
+public static void main(String[] args){
+
+Circle a = new Circle (5,1,2);
+a.getRadius();
+a.setRadius(25);
+  
+}
+}

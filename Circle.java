@@ -1,0 +1,30 @@
+public class Circle {
+private double radius;
+private double xcenter= 0;
+private double ycenter = 0;
+
+
+public Circle(double a, double b, double c){
+radius = a;
+xcenter = b;
+ycenter= c;
+
+}
+public Circle(double d){
+  
+radius=d;  
+}  
+
+public double getRadius(){
+
+return radius;
+}
+public void setRadius(double e){
+radius = e;  
+}
+public String toString(){
+
+return radius+ " is the radius of the circle. Its x-center is " +xcenter +" and y-center is "+ycenter+".";
+
+}
+}

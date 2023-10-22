@@ -1,0 +1,10 @@
+public class CarRunner {
+public static void main(String[]args)
+{
+Car deez = new Car ("Toyota", 2008, 100000);
+deez.race();
+Car yum = new Car ("Jonathan",2);
+yum.fuck();
+
+}
+}

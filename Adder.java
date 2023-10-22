@@ -1,0 +1,30 @@
+public class Adder
+{
+  private int value;
+
+  public Adder(int n)
+  {
+    value = n;
+  }
+
+  public void increase(int more)
+  {
+    value = value + more;
+  }
+
+  public int getValue()
+  {
+    return value;
+  }
+
+public static void main(String[] args) 
+{
+Adder a = new Adder(200);
+Adder b = new Adder(200);
+Adder c = a;
+
+a.increase(200);
+
+System.out.println(a.getValue() + " " + b.getValue() + " " + c.getValue());  
+}
+}
